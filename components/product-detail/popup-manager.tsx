@@ -128,18 +128,6 @@ const popupConfigsByProduct: Record<ProductVariant, Record<PopupId, PopupConfig>
   },
 };
 
-type PopupConfig = {
-  id: PopupId;
-  title: string;
-  description: string;
-  ctaLabel: string;
-  ctaHref: string;
-  secondaryLabel?: string;
-  secondaryHref?: string;
-  secondaryAction?: 'close' | 'link';
-};
-
-
 const STORAGE_KEY = 'gohighlevel-popup-state';
 const SESSION_KEY = 'gohighlevel-popup-session';
 const US_TIME_ZONE = 'America/New_York';
